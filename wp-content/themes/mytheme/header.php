@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- detta är för att Css ska visas på sidan -->
     <?php wp_head(); ?>
 </head>
 <body>
@@ -43,3 +42,9 @@
 
 <div class="hero"></div>
 <div class="sharp-white"></div>
+
+    <!--<div class="hero-banner">
+        <img src="https://s3-alpha-sig.figma.com/img/1461/f3d6/ff74c027a1888544144abe4be6e02cbf?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bMhobuS~UJYiyn~Qhp7vxkCGnv3RsOfQudrOx~lT7JxNUrdpMRouasYD2VE0DmUuPZHf6-bkmRjef5cWVc5uRxGTjM6LtdemWVHRIStG7lp1CCgPmkntJrX20f0fa8yYX4htmiXasFC2iP2T4cs1IsBSev-5GnDCQzEYS9CTub242cblhOTjuiLKig0MgFQqA1jgmL8hYsRdNexJLuUr0GpNuPQTBrhnNRQ7XVLuLPBOMTpzwzjGKmplxZfqtDXGbFKYfY9ZAgIV3N6sQyrrG~Wiv-vohXGnNxTxbWN7qhm1qOXomTPewjAuZouNmjThO~yHRrVHbFmGJsVYvPhf3Q__ " alt="pic">
+
+    </div>-->
+

@@ -1,7 +1,14 @@
 
 
-<?php get_header(); ?>
+<?php get_header();?>
 
-<?php the_content(); ?>
+<!-- CONTENT -->
+
+<main class="content">
+    <?= the_title(); ?>
+    <?= the_content(); ?>
+
+
+</main>
 
 <?php get_footer();?>

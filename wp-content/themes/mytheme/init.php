@@ -2,7 +2,7 @@
 
 require_once("settings.php");
 
-function meubeltheme_enqueue(){
+function mytheme_enqueue(){
     // Här länkar vi till CSS och JS.
     $theme_directory = get_template_directory_uri();
     wp_enqueue_style("mystyle", $theme_directory . "/resources/styles/app.scss");
@@ -10,10 +10,10 @@ function meubeltheme_enqueue(){
 
 }
 
-add_action('wp_enqueue_scripts', 'meubeltheme_enqueue');
+add_action('wp_enqueue_scripts', 'mytheme_enqueue');
 
 
-function meubeltheme_init(){
+function mytheme_init(){
     $menu = array(
         'primary_menu' => 'primary_menu',
         'secondary_menu' => 'secondary_menu',
@@ -24,4 +24,4 @@ function meubeltheme_init(){
     register_nav_menus($menu);
 }
 
-add_action('after_setup_theme', 'meubeltheme_init');
+add_action('after_setup_theme', 'mytheme_init');

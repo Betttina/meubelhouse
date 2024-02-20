@@ -1,6 +1,6 @@
 <?php
 
-//Om konstanten "absolute path" är definierad, avbryt allt. 
+
 if(!defined('ABSPATH')){
     exit;
 }
@@ -9,7 +9,7 @@ require_once("vite.php");
 
 require_once("hooks.php");
 
-//Initialize theme
+
 require_once(get_template_directory() . "/init.php");
 
 
