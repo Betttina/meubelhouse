@@ -28,3 +28,15 @@ function change_proceed_to_checkout_text( $translated_text, $text, $domain ) {
 
 
 
+// Remove shipping method/options in cart
+function disable_shipping_calc_on_cart( $show_shipping ) {
+    if( is_cart() ) {
+        return false;
+    }
+    return $show_shipping;
+}
+add_filter( 'woocommerce_cart_ready_to_calc_shipping', 'disable_shipping_calc_on_cart', 99 );
+
+
+// Remove "Calculate Shipping"
+add_filter('woocommerce_product_needs_shipping', function(){return false;});
