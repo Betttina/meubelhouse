@@ -1,10 +1,68 @@
+
+/* HERO */
+
+
 .custom-hero {
-  text-align: center; /* Centrerar text inom div */
-  /* Lägg till ytterligare styling här, som positionering över din hero-div */
+  background-color:cadetblue;
+  text-align: center;
+  height: 316px; width:auto;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo-div{
+    img {
+      height: 77px; width:77px;
+      padding:0;
+      margin:0;
+    }
+  }
+
+  h1 {
+
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding:0;
+    margin:0;
+
+  }
+
+  .breadcrumbs-div {
+    h5 {
+      nav {
+        a{
+          color:black;
+          text-decoration:none;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding:0;
+          margin:0;
+
+          #text {
+
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+
+          }
+        }
+      }
+    }
+  }
+
+
 }
 
-.custom-hero .page-title,
-.custom-hero .woocommerce-breadcrumb {
-  display: inline-block;
-  /* Lägg till ytterligare styling efter behov */
-}
+
+
+

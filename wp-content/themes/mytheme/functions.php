@@ -37,8 +37,8 @@ function custom_hero_content() {
         echo '</div>';
     }
 }
-add_action( 'woocommerce_before_main_content', 'custom_hero_content', 5 ); // Exempel för WooCommerce-sidor
-// För andra sidor kan du behöva hitta en lämplig action hook.
+add_action( 'woocommerce_before_main_content', 'custom_hero_content', 5 );
+
 
 
 /**
@@ -50,4 +50,19 @@ function wcc_change_breadcrumb_delimiter( $defaults ) {
     $defaults['delimiter'] = ' &gt; ';
     return $defaults;
 }
+
+function add_fontawesome_icons_to_menu( $atts, $item, $args ) {
+    // Kontrollera ID fö menyobjekt och lägg till ikon
+    if ('menu-item-59' === $item->ID) {
+        $atts['aria-label'] = 'My Account';
+        $atts['data-icon'] = 'fas fa-user';
+    } elseif ('menu-item-36' === $item->ID) {
+        $atts['aria-label'] = 'Search';
+        $atts['data-icon'] = 'fas fa-search';
+    }
+
+    return $atts;
+}
+add_filter('nav_menu_link_attributes', 'add_fontawesome_icons_to_menu', 10, 3);
+
 
