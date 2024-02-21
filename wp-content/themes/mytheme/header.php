@@ -48,7 +48,7 @@
 
 
 <div class="location">
-    <img src="resources/images/logo-yellow.png" alt="logo">
+    <img src="<?php echo get_template_directory_uri(); ?>/resources/images/logo-yellow.png" alt="logo">
     <?php woocommerce_page_title(); ?>
     <?php woocommerce_breadcrumb(); ?>
 </div>
