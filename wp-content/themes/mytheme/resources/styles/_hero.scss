@@ -1,0 +1,10 @@
+.custom-hero {
+  text-align: center; /* Centrerar text inom div */
+  /* Lägg till ytterligare styling här, som positionering över din hero-div */
+}
+
+.custom-hero .page-title,
+.custom-hero .woocommerce-breadcrumb {
+  display: inline-block;
+  /* Lägg till ytterligare styling efter behov */
+}

@@ -4,7 +4,6 @@ main{
     .woocommerce-products-header{
         background-color: transparent;
     }
-    
 
     ul.products{
         display: flex;
@@ -110,14 +109,16 @@ main{
             .add_to_cart_button{
                 display: block;
                 width: 100%;
-                background-color: black;
-                color: white;
+                border: 1px solid black;
+                background-color: white;
+                color: black;
                 text-align: center;
                 height: 40px;
                 line-height: 40px;
-                border-radius: 3px;
+                border-radius: 1rem;
             }    
 
        }
     }
 }
+

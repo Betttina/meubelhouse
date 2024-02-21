@@ -6,6 +6,7 @@
 
 <main class="content">
     <?= the_title(); ?>
+
     <?= the_content(); ?>
 
 

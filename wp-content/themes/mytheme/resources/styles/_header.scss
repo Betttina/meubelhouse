@@ -1,8 +1,8 @@
 header{
   display:flex;
   flex-direction: row;
-  width: 1440px;
-  height: 100px;
+  /*width: 1440px;*/
+  padding: 2rem;
 
 
   .primary_menu{
@@ -22,7 +22,6 @@ header{
 
       a{
         text-decoration: none;
-        font-family: Poppins;
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
@@ -140,3 +139,13 @@ header{
 
 }
 
+.custom-hero {
+  text-align: center; /* Centrerar text inom div */
+  /* Lägg till ytterligare styling här, som positionering över din hero-div */
+}
+
+.custom-hero .page-title,
+.custom-hero .woocommerce-breadcrumb {
+  display: inline-block;
+  /* Lägg till ytterligare styling efter behov */
+}

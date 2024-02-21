@@ -32,7 +32,7 @@
         <div class="column-big">
 
 
-            <?php if(!empty(get_option("address_field"))) : ?>
+            <?php if(!empty(get_option("address_street"))) : ?>
                 <div class="address_field">
                     <p> <?= get_option("address_street"); ?> <br>
                         <?= get_option("address_city"); ?>, <br>
@@ -106,6 +106,7 @@
 </div>
 
 </footer>
+<?php /*wp_footer>*/?>
 
 
 

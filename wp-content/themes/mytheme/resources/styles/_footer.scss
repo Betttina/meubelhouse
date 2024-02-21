@@ -154,9 +154,6 @@ footer {
       form {
         margin-top: 3rem;
 
-        label {
-          color: $secondary-font-color; // fungerar inte
-        }
 
         .newsletter_email, .newsletter_submit{
           font-family: $font;
@@ -165,6 +162,12 @@ footer {
           border-top: none;
           border-left: none;
           border-right: none;
+        }
+
+        .newsletter_email::placeholder{
+          color: $secondary-font-color;
+          font-size: 16px;
+
         }
 
         .newsletter_submit{
