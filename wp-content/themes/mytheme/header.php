@@ -44,12 +44,10 @@
 <div class="hero">
 
 
-
-
-
-
 </div>
-<div class="sharp-white">
+
+
+<div class="location">
     <img src="resources/images/logo-yellow.png" alt="logo">
     <?php woocommerce_page_title(); ?>
     <?php woocommerce_breadcrumb(); ?>

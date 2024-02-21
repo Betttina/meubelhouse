@@ -1,80 +1,37 @@
-/*
 
-.woocommerce {
-  display: flex;
-  !*padding:0 3rem 0 3rem;*!
-  padding: 5rem;
-
-  .cart-collaterals{
-    width: 50%;
-  }
-
-  .woocommerce-cart-form {
-    width: 52%;
-    align-items:center;
-    justify-content: center;
-    float:left;
-    margin-bottom: 20rem;
-
-    .shop-table{
-      padding-right: 3rem;
-    }
-
-    thead {
-      background-color: #FFF9E5;
-    }
-
-  }
-
-  .cart-totals{
-    width: 30%;
-    float:left;
-    background-color: #FFF9E5!important;
-
-  }
-}
+/* ----- CART PAGE ------ */
 
 
-!* fixa papperskorg *!
-.woocommerce-cart-form__cart-item {
-  .product-remove {
-    display: flex;
-    justify-content: end;
-    float: right;
-
-    position: relative;
-    left:45rem;
-    padding: 5rem;
-    top: 4rem;
-  }
-}*/
+/* remove borders */
 .woocommerce table.shop_table tbody th, .woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th{
   border-style:none;
 }
-
 
 .woocommerce table.shop_table {
   border-style:none;
 }
 
+
+
 .woocommerce {
   display: flex;
+  margin-bottom: 5rem;
+  align-items: flex-start;
 
   .woocommerce-cart-form{
-    margin:3rem;
+    margin-left:5rem;
 
     .woocommerce-cart-form__contents{
       tbody{
-        margin-top:6rem;
+
 
       }
 
       thead {
-        margin-bottom:6rem;
+
       }
 
     }
-
 
 
     table.shop_table{
@@ -89,7 +46,7 @@
 
 
       .woocommerce-cart-form__cart-item{
-        margin-top:10rem;
+
 
         .product-thumbnail{
           img{
@@ -141,23 +98,13 @@
       display: none !important;
     }
   }
-
-
-
-  table {
-
-
-  }
-
-  .cart-totals{
-    height: 80rem;
-  }
 }
 
-/* The table containing the list of products and our custom elements */
+/* The table containing the list of products */
 .woocommerce .woocommerce-cart-form {
-  flex: 1 0 65%; /* 100% at small screens; 70% on larger screens */
-  margin-right: 5px;
+  //flex: 1 0 55%; /* 100% at small screens; 70% on larger screens */
+  width:817px;
+  height:216px;
   border: 0 !important;
 
 }
@@ -168,13 +115,17 @@
   width:393px;
   height:390px;
 }
+
+
 /* WHOLE CART TOTALS-AREA */
 .woocommerce .cart-collaterals .cart_totals {
+
   width: 100%;
   display:flex;
   align-items:center;
   justify-content: center;
   flex-direction:column;
+
 
 
 }
@@ -194,19 +145,11 @@
   padding:2rem;
 }
 
-  /* trash can */
-.woocommerce-cart-form .shop_table .product-remove {
-  text-align: right; /* Justerar till höger */
-}
+
 
 form.woocommerce-cart-form {
-  padding: 1em;
-  border-radius: 1em;
+  margin-right: 3rem;
   background-color: transparent !important;
-
-
-  /*width:817px;
-  height:216px;*/
 }
 
 .cart-collaterals {
@@ -222,7 +165,7 @@ form.woocommerce-cart-form {
 .woocommerce-page #content .quantity input.qty,
 .woocommerce-page .quantity input.qty {
   width:2rem;
-  height:2rem; /* you may need to change this based on your font size */
+  height:2rem;
   border: 2px solid #bbb9b9;
   border-radius: 7px;
   #spin{
@@ -231,12 +174,10 @@ form.woocommerce-cart-form {
 }
 
 
-/* Check out button */
+/* -- Check Out button --- */
  .woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button {
    font-weight:400;
  }
-
-
 
  .wc-proceed-to-checkout
  {
@@ -249,7 +190,6 @@ form.woocommerce-cart-form {
    border: 1px solid black;
    color:black !important;
    border-radius: 13px;
-
 
    a{
      font-size:20px;
