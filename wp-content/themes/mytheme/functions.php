@@ -27,6 +27,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
 
 
 /* HERO */
+// ej klar med denna bit
 function custom_hero_content() {
     if ( ! is_front_page() ) { // Exkludera startsidan om du önskar
         echo '<div class="hero">';

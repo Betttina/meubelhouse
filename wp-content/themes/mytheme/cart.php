@@ -32,7 +32,6 @@ function change_proceed_to_checkout_text( $translated_text, $text, $domain ) {
 
 
 // Disable (inaktivera) shipping method/options in cart
-//
 function disable_shipping_calc_on_cart( $show_shipping ) {
     // check if user is in cart
     // returns false to hide shipping option

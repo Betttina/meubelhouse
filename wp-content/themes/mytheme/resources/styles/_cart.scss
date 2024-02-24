@@ -24,8 +24,10 @@ input[type=number] {
 
 .woocommerce {
   display: flex;
-  margin-bottom: 5rem;
-  align-items: flex-start;
+  margin: 5rem;
+  align-items: center;
+  justify-content:center;
+
 
   .woocommerce-cart-form{
     margin-left:5rem;
